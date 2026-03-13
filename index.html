@@ -1,0 +1,499 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Uma história inspiradora de transformação - De obesidade extrema a uma vida completamente nova.">
+    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon_atoms.ico" type="image/x-icon">
+    <title>Minha Transformação | Uma Jornada de Superação</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-circle"></div>
+            <p class="loader-text">Carregando minha história...</p>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-follower"></div>
+
+    <!-- Progress Bar -->
+    <div id="progress-bar"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-logo">YM</div>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#hero">Início</a></li>
+            <li><a href="#before">Antes</a></li>
+            <li><a href="#decision">Decisão</a></li>
+            <li><a href="#transformation">Transformação</a></li>
+            <li><a href="#results">Resultados</a></li>
+            <li><a href="#lessons">Lições</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- ========== 1. HERO SECTION ========== -->
+    <section id="hero" class="hero-section">
+        <div class="hero-parallax" style="background-image: url('https://mgx-backend-cdn.metadl.com/generate/images/1023379/2026-03-13/9f25e9dd-e226-45d4-8953-8d797cc83384.png')"></div>
+        <div class="hero-overlay"></div>
+        <canvas id="particles-canvas"></canvas>
+        <div class="hero-content">
+            <p class="hero-subtitle reveal-up">Uma história real de superação</p>
+            <h1 class="hero-title">
+                <span class="title-line reveal-up" style="--delay: 0.2s">Minha</span>
+                <span class="title-line accent reveal-up" style="--delay: 0.4s">Transformação</span>
+            </h1>
+            <p class="hero-description reveal-up" style="--delay: 0.6s">
+                De 180kg a uma vida completamente nova. Esta é a minha jornada de coragem, disciplina e renascimento.
+            </p>
+            <a href="#before" class="hero-btn reveal-up" style="--delay: 0.8s">
+                <span>Veja minha jornada</span>
+                <i class="fas fa-arrow-down"></i>
+            </a>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+            <p>Role para baixo</p>
+        </div>
+    </section>
+
+    <!-- ========== 2. ANTES DA MUDANÇA ========== -->
+    <section id="before" class="section before-section">
+        <div class="section-bg-image" style="background-image: url('https://mgx-backend-cdn.metadl.com/generate/images/1023379/2026-03-13/fcc75deb-983a-4e8d-8f18-cd0c89525ae2.png')"></div>
+        <div class="section-overlay"></div>
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <span class="section-tag">O Começo</span>
+                <h2 class="section-title">Antes da Mudança</h2>
+                <p class="section-desc">Os dias mais difíceis da minha vida foram o combustível para a maior transformação que eu poderia imaginar.</p>
+            </div>
+            <div class="before-grid">
+                <div class="before-card glass-card scroll-reveal" style="--delay: 0.1s">
+                    <div class="card-icon"><i class="fas fa-weight-hanging"></i></div>
+                    <h3>180 kg</h3>
+                    <p>Meu peso máximo. Cada passo era uma batalha, cada escada um desafio impossível. Meu corpo gritava por socorro.</p>
+                </div>
+                <div class="before-card glass-card scroll-reveal" style="--delay: 0.2s">
+                    <div class="card-icon"><i class="fas fa-heart-broken"></i></div>
+                    <h3>Dor Emocional</h3>
+                    <p>Depressão, ansiedade, isolamento social. A comida era meu refúgio e minha prisão ao mesmo tempo.</p>
+                </div>
+                <div class="before-card glass-card scroll-reveal" style="--delay: 0.3s">
+                    <div class="card-icon"><i class="fas fa-bed"></i></div>
+                    <h3>Sem Qualidade de Vida</h3>
+                    <p>Não conseguia brincar com meus filhos, não cabia em assentos normais, evitava sair de casa.</p>
+                </div>
+                <div class="before-card glass-card scroll-reveal" style="--delay: 0.4s">
+                    <div class="card-icon"><i class="fas fa-hospital"></i></div>
+                    <h3>Alerta Médico</h3>
+                    <p>Diabetes, hipertensão, apneia do sono. Os médicos disseram: "Mude ou não verá seus filhos crescerem."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 3. MOMENTO DA DECISÃO ========== -->
+    <section id="decision" class="section decision-section">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <span class="section-tag">O Ponto de Virada</span>
+                <h2 class="section-title">Momento da Decisão</h2>
+                <p class="section-desc">Existe um momento na vida em que você decide: ou muda, ou aceita. Eu escolhi mudar.</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-line">
+                    <div class="timeline-line-fill"></div>
+                </div>
+                <div class="timeline-item left scroll-reveal" style="--delay: 0.1s">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">Janeiro 2022</span>
+                        <h3>O Despertar</h3>
+                        <p>Não consegui me levantar do sofá sozinho. Meu filho de 5 anos tentou me ajudar. Naquele momento, algo quebrou dentro de mim.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right scroll-reveal" style="--delay: 0.2s">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">Fevereiro 2022</span>
+                        <h3>Primeiro Passo</h3>
+                        <p>Procurei um endocrinologista e um nutricionista. Comecei a reeducação alimentar. Os primeiros dias foram os mais difíceis.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left scroll-reveal" style="--delay: 0.3s">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">Março 2022</span>
+                        <h3>Começando a Mover</h3>
+                        <p>Minha primeira caminhada foi de apenas 200 metros. Voltei ofegante, mas voltei. No dia seguinte, fiz 250 metros.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right scroll-reveal" style="--delay: 0.4s">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">Junho 2022</span>
+                        <h3>Primeiros Resultados</h3>
+                        <p>20kg perdidos em 5 meses. Pela primeira vez em anos, consegui amarrar meus próprios sapatos. Chorei de alegria.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left scroll-reveal" style="--delay: 0.5s">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">Dezembro 2022</span>
+                        <h3>Sem Volta</h3>
+                        <p>45kg a menos. Entrei na academia pela primeira vez. Medo, vergonha, mas determinação maior que tudo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 4. PROCESSO DE TRANSFORMAÇÃO ========== -->
+    <section id="transformation" class="section transformation-section">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <span class="section-tag">A Evolução</span>
+                <h2 class="section-title">Processo de Transformação</h2>
+                <p class="section-desc">Cada mês foi uma vitória. Cada quilo perdido, uma batalha vencida.</p>
+            </div>
+
+            <!-- Before/After Slider -->
+            <div class="comparison-container scroll-reveal">
+                <div class="comparison-slider" id="comparisonSlider">
+                    <div class="comparison-before">
+                        <img src="https://mgx-backend-cdn.metadl.com/generate/images/1023379/2026-03-13/fcc75deb-983a-4e8d-8f18-cd0c89525ae2.png" alt="Antes da transformação" loading="lazy">
+                        <span class="comparison-label">ANTES</span>
+                    </div>
+                    <div class="comparison-after">
+                        <img src="https://mgx-backend-cdn.metadl.com/generate/images/1023379/2026-03-13/ec1d6bab-16de-4e5a-9d44-6d00b9c5ee54.png" alt="Depois da transformação" loading="lazy">
+                        <span class="comparison-label">DEPOIS</span>
+                    </div>
+                    <div class="comparison-handle" id="comparisonHandle">
+                        <div class="handle-line"></div>
+                        <div class="handle-circle">
+                            <i class="fas fa-arrows-left-right"></i>
+                        </div>
+                        <div class="handle-line"></div>
+                    </div>
+                </div>
+                <p class="comparison-hint"><i class="fas fa-hand-pointer"></i> Arraste para comparar</p>
+            </div>
+
+            <!-- Progress Gallery -->
+            <div class="progress-gallery scroll-reveal">
+                <div class="progress-item" style="--delay: 0.1s">
+                    <div class="progress-card">
+                        <div class="progress-month">Mês 1</div>
+                        <div class="progress-weight">175 kg</div>
+                        <div class="progress-bar-mini"><div class="progress-fill" style="--width: 3%"></div></div>
+                        <p>Início da reeducação alimentar</p>
+                    </div>
+                </div>
+                <div class="progress-item" style="--delay: 0.15s">
+                    <div class="progress-card">
+                        <div class="progress-month">Mês 3</div>
+                        <div class="progress-weight">160 kg</div>
+                        <div class="progress-bar-mini"><div class="progress-fill" style="--width: 15%"></div></div>
+                        <p>Primeiras caminhadas diárias</p>
+                    </div>
+                </div>
+                <div class="progress-item" style="--delay: 0.2s">
+                    <div class="progress-card">
+                        <div class="progress-month">Mês 6</div>
+                        <div class="progress-weight">140 kg</div>
+                        <div class="progress-bar-mini"><div class="progress-fill" style="--width: 30%"></div></div>
+                        <p>Início dos treinos na academia</p>
+                    </div>
+                </div>
+                <div class="progress-item" style="--delay: 0.25s">
+                    <div class="progress-card">
+                        <div class="progress-month">Mês 9</div>
+                        <div class="progress-weight">120 kg</div>
+                        <div class="progress-bar-mini"><div class="progress-fill" style="--width: 50%"></div></div>
+                        <p>Correndo 5km sem parar</p>
+                    </div>
+                </div>
+                <div class="progress-item" style="--delay: 0.3s">
+                    <div class="progress-card">
+                        <div class="progress-month">Mês 12</div>
+                        <div class="progress-weight">100 kg</div>
+                        <div class="progress-bar-mini"><div class="progress-fill" style="--width: 65%"></div></div>
+                        <p>Primeira meia maratona</p>
+                    </div>
+                </div>
+                <div class="progress-item" style="--delay: 0.35s">
+                    <div class="progress-card">
+                        <div class="progress-month">Mês 18</div>
+                        <div class="progress-weight">85 kg</div>
+                        <div class="progress-bar-mini"><div class="progress-fill" style="--width: 85%"></div></div>
+                        <p>Vida completamente nova</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 5. VÍDEOS DA JORNADA ========== -->
+    <section id="videos" class="section videos-section">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <span class="section-tag">Em Movimento</span>
+                <h2 class="section-title">Vídeos da Jornada</h2>
+                <p class="section-desc">Momentos reais capturados durante toda a transformação.</p>
+            </div>
+            <div class="video-grid">
+                <div class="video-card scroll-reveal" style="--delay: 0.1s" data-video="treino">
+                    <div class="video-thumbnail">
+                        <img src="https://mgx-backend-cdn.metadl.com/generate/images/1023379/2026-03-13/ec1d6bab-16de-4e5a-9d44-6d00b9c5ee54.png" alt="Rotina de Treino" loading="lazy">
+                        <div class="video-play">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="video-duration">12:34</div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Minha Rotina de Treino</h3>
+                        <p>Do zero ao treino completo - como comecei e como treino hoje</p>
+                    </div>
+                </div>
+                <div class="video-card scroll-reveal" style="--delay: 0.2s" data-video="alimentacao">
+                    <div class="video-thumbnail">
+                        <img src="https://mgx-backend-cdn.metadl.com/generate/images/1023379/2026-03-13/4212c707-be2a-46ca-99e1-39c799714f72.png" alt="Reeducação Alimentar" loading="lazy">
+                        <div class="video-play">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="video-duration">18:22</div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Reeducação Alimentar</h3>
+                        <p>Como mudei completamente minha relação com a comida</p>
+                    </div>
+                </div>
+                <div class="video-card scroll-reveal" style="--delay: 0.3s" data-video="evolucao">
+                    <div class="video-thumbnail">
+                        <img src="https://mgx-backend-cdn.metadl.com/generate/images/1023379/2026-03-13/2233cad4-8122-4f61-b584-270412b8ff90.png" alt="Evolução Completa" loading="lazy">
+                        <div class="video-play">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="video-duration">24:15</div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Evolução Completa</h3>
+                        <p>18 meses em 24 minutos - toda a minha transformação</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Modal -->
+    <div class="video-modal" id="videoModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+            <div class="modal-video-placeholder">
+                <i class="fas fa-play-circle"></i>
+                <p>Vídeo em breve</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== 6. RESULTADOS ========== -->
+    <section id="results" class="section results-section">
+        <div class="results-bg" style="background-image: url('https://mgx-backend-cdn.metadl.com/generate/images/1023379/2026-03-13/2233cad4-8122-4f61-b584-270412b8ff90.png')"></div>
+        <div class="section-overlay"></div>
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <span class="section-tag">Conquistas</span>
+                <h2 class="section-title">Resultados</h2>
+                <p class="section-desc">Números que contam uma história de dedicação e perseverança.</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card glass-card scroll-reveal" style="--delay: 0.1s">
+                    <div class="stat-icon"><i class="fas fa-weight-scale"></i></div>
+                    <div class="stat-number" data-target="95">0</div>
+                    <div class="stat-unit">kg perdidos</div>
+                    <p class="stat-desc">De 180kg para 85kg</p>
+                </div>
+                <div class="stat-card glass-card scroll-reveal" style="--delay: 0.2s">
+                    <div class="stat-icon"><i class="fas fa-calendar-check"></i></div>
+                    <div class="stat-number" data-target="18">0</div>
+                    <div class="stat-unit">meses de dedicação</div>
+                    <p class="stat-desc">Sem um único dia de desistência</p>
+                </div>
+                <div class="stat-card glass-card scroll-reveal" style="--delay: 0.3s">
+                    <div class="stat-icon"><i class="fas fa-running"></i></div>
+                    <div class="stat-number" data-target="2500">0</div>
+                    <div class="stat-unit">km percorridos</div>
+                    <p class="stat-desc">Entre caminhadas e corridas</p>
+                </div>
+                <div class="stat-card glass-card scroll-reveal" style="--delay: 0.4s">
+                    <div class="stat-icon"><i class="fas fa-heart-pulse"></i></div>
+                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-unit">% de vida nova</div>
+                    <p class="stat-desc">Sem medicamentos, sem limitações</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 7. LIÇÕES APRENDIDAS ========== -->
+    <section id="lessons" class="section lessons-section">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <span class="section-tag">Sabedoria</span>
+                <h2 class="section-title">Lições Aprendidas</h2>
+                <p class="section-desc">O que essa jornada me ensinou vai muito além do peso na balança.</p>
+            </div>
+            <div class="lessons-grid">
+                <div class="lesson-card glass-card scroll-reveal" style="--delay: 0.1s">
+                    <div class="lesson-number">01</div>
+                    <div class="lesson-icon"><i class="fas fa-fire"></i></div>
+                    <h3>Disciplina Supera Motivação</h3>
+                    <p>Motivação é um sentimento passageiro. Disciplina é uma decisão diária. Nos dias em que eu não queria, a disciplina me levantava.</p>
+                </div>
+                <div class="lesson-card glass-card scroll-reveal" style="--delay: 0.2s">
+                    <div class="lesson-number">02</div>
+                    <div class="lesson-icon"><i class="fas fa-link"></i></div>
+                    <h3>Consistência é a Chave</h3>
+                    <p>Não foram grandes gestos heroicos. Foram pequenas escolhas certas, repetidas todos os dias, durante 18 meses.</p>
+                </div>
+                <div class="lesson-card glass-card scroll-reveal" style="--delay: 0.3s">
+                    <div class="lesson-number">03</div>
+                    <div class="lesson-icon"><i class="fas fa-brain"></i></div>
+                    <h3>A Mente Muda Primeiro</h3>
+                    <p>Antes de perder peso no corpo, precisei perder o peso da mente. Terapia, autoconhecimento e aceitação foram fundamentais.</p>
+                </div>
+                <div class="lesson-card glass-card scroll-reveal" style="--delay: 0.4s">
+                    <div class="lesson-number">04</div>
+                    <div class="lesson-icon"><i class="fas fa-users"></i></div>
+                    <h3>Ninguém Vence Sozinho</h3>
+                    <p>Família, amigos, profissionais de saúde. Cada pessoa que acreditou em mim foi essencial nessa caminhada.</p>
+                </div>
+                <div class="lesson-card glass-card scroll-reveal" style="--delay: 0.5s">
+                    <div class="lesson-number">05</div>
+                    <div class="lesson-icon"><i class="fas fa-seedling"></i></div>
+                    <h3>Progresso, Não Perfeição</h3>
+                    <p>Tive recaídas, dias ruins, semanas difíceis. O segredo foi nunca transformar um tropeço em queda.</p>
+                </div>
+                <div class="lesson-card glass-card scroll-reveal" style="--delay: 0.6s">
+                    <div class="lesson-number">06</div>
+                    <div class="lesson-icon"><i class="fas fa-infinity"></i></div>
+                    <h3>É Uma Jornada Sem Fim</h3>
+                    <p>Não existe linha de chegada. Saúde é um compromisso diário, uma escolha que se renova a cada manhã.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 8. MENSAGEM INSPIRADORA ========== -->
+    <section id="inspiration" class="section inspiration-section">
+        <div class="inspiration-bg" style="background-image: url('https://mgx-backend-cdn.metadl.com/generate/images/1023379/2026-03-13/457c7768-6e2f-44ea-bc49-1322032d55d6.png')"></div>
+        <div class="section-overlay dark-overlay"></div>
+        <div class="container">
+            <div class="inspiration-content scroll-reveal">
+                <div class="quote-mark"><i class="fas fa-quote-left"></i></div>
+                <blockquote class="inspiration-quote">
+                    A pessoa que você será daqui a um ano está te observando agora, torcendo para que você tome a decisão certa hoje.
+                </blockquote>
+                <p class="inspiration-author">— Para você que está lendo isso</p>
+                <p class="inspiration-message">
+                    Se eu consegui, você também consegue. Não importa onde você está agora. 
+                    O que importa é a decisão que você toma neste momento. 
+                    Sua transformação começa com um único passo.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 9. CONTATO E REDES ========== -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <span class="section-tag">Conecte-se</span>
+                <h2 class="section-title">Vamos Conversar</h2>
+                <p class="section-desc">Quer compartilhar sua história ou precisa de inspiração? Entre em contato.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-form-wrapper glass-card scroll-reveal" style="--delay: 0.1s">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Conte sua história ou deixe uma mensagem..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span>Enviar Mensagem</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="contact-info scroll-reveal" style="--delay: 0.2s">
+                    <div class="social-links">
+                        <h3>Redes Sociais</h3>
+                        <div class="social-grid">
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="#" class="social-link" aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                                <span>YouTube</span>
+                            </a>
+                            <a href="#" class="social-link" aria-label="TikTok">
+                                <i class="fab fa-tiktok"></i>
+                                <span>TikTok</span>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <i class="fab fa-x-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-quote glass-card">
+                        <p>"Sua mensagem pode ser o início da transformação de alguém. Não subestime o poder das suas palavras."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">YM</div>
+                <p>Minha Transformação &copy; 2024 — Uma história real de superação</p>
+                <div class="footer-links">
+                    <a href="#hero">Início</a>
+                    <a href="#before">Antes</a>
+                    <a href="#results">Resultados</a>
+                    <a href="#contact">Contato</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
